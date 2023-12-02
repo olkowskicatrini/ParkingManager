@@ -1,0 +1,27 @@
+<!-- app/views/parking_spots/_form.html.erb -->
+<%= form_with(model: @parking_spot, local: true) do |form| %>
+  <% if @parking_spot.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@parking_spot.errors.count, 'error') %> prohibited this parking_spot from being saved:</h2>
+      <ul>
+        <% @parking_spot.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :number %>
+    <%= form.number_field :number %>
+  </div>
+
+  <div class="field">
+    <%= form.label :status %>
+    <%= form.text_field :status %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit 'Salvar', class: 'btn btn-success', id: 'save-btn' %>
+  </div>
+<% end %>

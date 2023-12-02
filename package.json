@@ -1,0 +1,14 @@
+{
+  "name": "ParkingManager",
+  "private": true,
+  "dependencies": {
+    "jquery": "^3.7.1",
+    "materialize-css": "^1.0.0-rc.2",
+    "notify-js-legacy": "^0.4.1"
+  },
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/olkowskicatrini/ParkingManager.git",
+  "author": "Guilherme M <guimagioni@gmail.com>",
+  "license": "MIT"
+}

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ParkingManager</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag     params[:controller], media: 'all', 'data-turbolinks-track': 'reload' %>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" ref="stylesheet" >
+
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag params[:controller], 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+  <nav>
+  <div class="nav-wrapper">
+    <ul class="left hide-on-med-and-down">
+      <li><a href="vehicles.html">Listagem</a></li>
+      <li><a href="vehicles/new.html">Cadastro veiculo</a></li>
+    </ul>
+  </div>
+</nav>
+   <%= yield %>
+  </body>
+</html>

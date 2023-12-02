@@ -1,0 +1,30 @@
+<!-- app/views/vehicles/show.html.erb -->
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Plate:</strong>
+  <%= @vehicle.plate %>
+</p>
+
+<p>
+  <strong>Color:</strong>
+  <%= @vehicle.color %>
+</p>
+
+<p>
+  <strong>Model:</strong>
+  <%= @vehicle.model %>
+</p>
+
+<p>
+  <strong>Year:</strong>
+  <%= @vehicle.year %>
+</p>
+
+<p>
+  <strong>Responsavel Name:</strong>
+  <%= @vehicle.responsavel_name %>
+</p>
+
+<%= link_to 'Editar', edit_vehicle_path(@vehicle), class: 'btn waves-effect waves-light blue' %> |
+<%= link_to 'Voltar', vehicles_path, class: 'btn waves-effect waves-light grey' %>

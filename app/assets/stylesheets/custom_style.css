@@ -1,0 +1,21 @@
+/* app/assets/stylesheets/custom_styles.css */
+
+/* Estilos personalizados para o materialize-css */
+body {
+    background-color: #b83939;
+    color: #333;
+    margin: 33px;
+    font-family: verdana, arial, helvetica, sans-serif;
+    font-size: 13px;
+    line-height: 18px;
+  }
+  
+  /* Estilos personalizados para os botões do materialize-css */
+  .btn {
+    background-color: #ff4081; /* Cor de fundo do botão */
+    color: #fff; /* Cor do texto do botão */
+    font-size: 14px; /* Tamanho da fonte do botão */
+  }
+  
+  /* Adicione mais estilos conforme necessário */
+  
