@@ -9880,3 +9880,449 @@ Processing by ParkingSpotsController#index as HTML
 Completed 200 OK in 47ms (Views: 37.7ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for 10.0.2.2 at 2023-12-04 23:58:19 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.6.10/gems/activerecord-5.2.8.1/lib/active_record/log_subscriber.rb:98
+Processing by ParkingSpotsController#index as HTML
+  Rendering parking_spots/index.html.erb within layouts/application
+  Rendered parking_spots/index.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 1290ms (Views: 1238.7ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/vehicles/new.html" for 10.0.2.2 at 2023-12-04 23:58:22 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by VehiclesController#new as HTML
+  Rendering vehicles/new.html.erb within layouts/application
+  Rendered vehicles/_form.html.erb (100.3ms)
+  Rendered vehicles/new.html.erb within layouts/application (125.3ms)
+Completed 200 OK in 248ms (Views: 223.2ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/vehicles/new.html" for 10.0.2.2 at 2023-12-04 23:58:23 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by VehiclesController#new as HTML
+  Rendering vehicles/new.html.erb within layouts/application
+  Rendered vehicles/_form.html.erb (2.2ms)
+  Rendered vehicles/new.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 42ms (Views: 38.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vehicles/vehicles.html" for 10.0.2.2 at 2023-12-04 23:58:23 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by VehiclesController#show as HTML
+  Parameters: {"id"=>"vehicles"}
+  [1m[36mVehicle Load (0.9ms)[0m  [1m[34mSELECT  "vehicles".* FROM "vehicles" WHERE "vehicles"."id" = ? LIMIT ?[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/vehicles_controller.rb:57
+Completed 404 Not Found in 13ms (ActiveRecord: 0.9ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Vehicle with 'id'=vehicles):
+  
+app/controllers/vehicles_controller.rb:57:in `set_vehicle'
+Started GET "/" for 10.0.2.2 at 2023-12-04 23:58:25 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ParkingSpotsController#index as HTML
+  Rendering parking_spots/index.html.erb within layouts/application
+  Rendered parking_spots/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 65ms (Views: 56.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vehicles.html" for 10.0.2.2 at 2023-12-04 23:58:26 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by VehiclesController#index as HTML
+  Rendering vehicles/index.html.erb within layouts/application
+  [1m[36mVehicle Load (0.4ms)[0m  [1m[34mSELECT "vehicles".* FROM "vehicles"[0m
+  ↳ app/views/vehicles/index.html.erb:17
+  Rendered vehicles/index.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 55ms (Views: 48.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/vehicles.html" for 10.0.2.2 at 2023-12-04 23:58:26 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by VehiclesController#index as HTML
+  Rendering vehicles/index.html.erb within layouts/application
+  [1m[36mVehicle Load (0.3ms)[0m  [1m[34mSELECT "vehicles".* FROM "vehicles"[0m
+  ↳ app/views/vehicles/index.html.erb:17
+  Rendered vehicles/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 54ms (Views: 50.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/vehicles/9" for 10.0.2.2 at 2023-12-04 23:58:26 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by VehiclesController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mVehicle Load (0.8ms)[0m  [1m[34mSELECT  "vehicles".* FROM "vehicles" WHERE "vehicles"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/vehicles_controller.rb:57
+  Rendering vehicles/show.html.erb within layouts/application
+  Rendered vehicles/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 58ms (Views: 40.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/vehicles" for 10.0.2.2 at 2023-12-04 23:58:30 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by VehiclesController#index as HTML
+  Rendering vehicles/index.html.erb within layouts/application
+  [1m[36mVehicle Load (0.4ms)[0m  [1m[34mSELECT "vehicles".* FROM "vehicles"[0m
+  ↳ app/views/vehicles/index.html.erb:17
+  Rendered vehicles/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 44ms (Views: 38.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/vehicles/9" for 10.0.2.2 at 2023-12-04 23:58:31 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by VehiclesController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mVehicle Load (0.8ms)[0m  [1m[34mSELECT  "vehicles".* FROM "vehicles" WHERE "vehicles"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/vehicles_controller.rb:57
+  Rendering vehicles/show.html.erb within layouts/application
+  Rendered vehicles/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 44ms (Views: 36.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/vehicles" for 10.0.2.2 at 2023-12-04 23:58:34 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by VehiclesController#index as HTML
+  Rendering vehicles/index.html.erb within layouts/application
+  [1m[36mVehicle Load (0.4ms)[0m  [1m[34mSELECT "vehicles".* FROM "vehicles"[0m
+  ↳ app/views/vehicles/index.html.erb:17
+  Rendered vehicles/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 56ms (Views: 40.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/vehicles/9" for 10.0.2.2 at 2023-12-04 23:58:35 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by VehiclesController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mVehicle Load (0.8ms)[0m  [1m[34mSELECT  "vehicles".* FROM "vehicles" WHERE "vehicles"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/vehicles_controller.rb:57
+  Rendering vehicles/show.html.erb within layouts/application
+  Rendered vehicles/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 53ms (Views: 44.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/vehicles" for 10.0.2.2 at 2023-12-04 23:58:37 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by VehiclesController#index as HTML
+  Rendering vehicles/index.html.erb within layouts/application
+  [1m[36mVehicle Load (0.3ms)[0m  [1m[34mSELECT "vehicles".* FROM "vehicles"[0m
+  ↳ app/views/vehicles/index.html.erb:17
+  Rendered vehicles/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 46ms (Views: 39.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/vehicles/9/edit" for 10.0.2.2 at 2023-12-04 23:58:39 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by VehiclesController#edit as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mVehicle Load (0.9ms)[0m  [1m[34mSELECT  "vehicles".* FROM "vehicles" WHERE "vehicles"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/vehicles_controller.rb:57
+  Rendering vehicles/edit.html.erb within layouts/application
+  Rendered vehicles/_form.html.erb (1.9ms)
+  Rendered vehicles/edit.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 51ms (Views: 43.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/vehicles" for 10.0.2.2 at 2023-12-04 23:58:41 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by VehiclesController#index as HTML
+  Rendering vehicles/index.html.erb within layouts/application
+  [1m[36mVehicle Load (0.4ms)[0m  [1m[34mSELECT "vehicles".* FROM "vehicles"[0m
+  ↳ app/views/vehicles/index.html.erb:17
+  Rendered vehicles/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 43ms (Views: 36.0ms | ActiveRecord: 0.4ms)
+
+
+Started DELETE "/vehicles/9" for 10.0.2.2 at 2023-12-04 23:58:42 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by VehiclesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"u5foYeAw5+NKnrU6e0SkLjBOzxzi/2zr1+xlkKgcLkPbBUMpTAUDAbz3fmyB1oLVGY/aWGBOiwnrpLJ92FQDBg==", "id"=>"9"}
+  [1m[36mVehicle Load (0.4ms)[0m  [1m[34mSELECT  "vehicles".* FROM "vehicles" WHERE "vehicles"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/vehicles_controller.rb:57
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/vehicles_controller.rb:46
+  [1m[36mVehicle Destroy (1.8ms)[0m  [1m[31mDELETE FROM "vehicles" WHERE "vehicles"."id" = ?[0m  [["id", 9]]
+  ↳ app/controllers/vehicles_controller.rb:46
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/vehicles_controller.rb:46
+Redirected to http://localhost:3000/vehicles
+Completed 302 Found in 11ms (ActiveRecord: 3.7ms)
+
+
+Started GET "/vehicles" for 10.0.2.2 at 2023-12-04 23:58:42 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by VehiclesController#index as HTML
+  Rendering vehicles/index.html.erb within layouts/application
+  [1m[36mVehicle Load (0.3ms)[0m  [1m[34mSELECT "vehicles".* FROM "vehicles"[0m
+  ↳ app/views/vehicles/index.html.erb:17
+  Rendered vehicles/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 51ms (Views: 47.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/vehicles/new" for 10.0.2.2 at 2023-12-04 23:58:44 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by VehiclesController#new as HTML
+  Rendering vehicles/new.html.erb within layouts/application
+  Rendered vehicles/_form.html.erb (1.9ms)
+  Rendered vehicles/new.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 53ms (Views: 47.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vehicles/new.html" for 10.0.2.2 at 2023-12-04 23:58:46 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by VehiclesController#new as HTML
+  Rendering vehicles/new.html.erb within layouts/application
+  Rendered vehicles/_form.html.erb (1.9ms)
+  Rendered vehicles/new.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 45ms (Views: 40.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vehicles/vehicles.html" for 10.0.2.2 at 2023-12-04 23:58:46 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by VehiclesController#show as HTML
+  Parameters: {"id"=>"vehicles"}
+  [1m[36mVehicle Load (1.3ms)[0m  [1m[34mSELECT  "vehicles".* FROM "vehicles" WHERE "vehicles"."id" = ? LIMIT ?[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/vehicles_controller.rb:57
+Completed 404 Not Found in 3ms (ActiveRecord: 1.3ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Vehicle with 'id'=vehicles):
+  
+app/controllers/vehicles_controller.rb:57:in `set_vehicle'
+Started GET "/" for 10.0.2.2 at 2023-12-04 23:58:48 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ParkingSpotsController#index as HTML
+  Rendering parking_spots/index.html.erb within layouts/application
+  Rendered parking_spots/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 66ms (Views: 53.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vehicles.html" for 10.0.2.2 at 2023-12-04 23:58:49 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by VehiclesController#index as HTML
+  Rendering vehicles/index.html.erb within layouts/application
+  [1m[36mVehicle Load (0.3ms)[0m  [1m[34mSELECT "vehicles".* FROM "vehicles"[0m
+  ↳ app/views/vehicles/index.html.erb:17
+  Rendered vehicles/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 42ms (Views: 35.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/vehicles.html" for 10.0.2.2 at 2023-12-04 23:58:49 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by VehiclesController#index as HTML
+  Rendering vehicles/index.html.erb within layouts/application
+  [1m[36mVehicle Load (0.4ms)[0m  [1m[34mSELECT "vehicles".* FROM "vehicles"[0m
+  ↳ app/views/vehicles/index.html.erb:17
+  Rendered vehicles/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 38ms (Views: 34.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/vehicles/new" for 10.0.2.2 at 2023-12-04 23:59:01 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by VehiclesController#new as HTML
+  Rendering vehicles/new.html.erb within layouts/application
+  Rendered vehicles/_form.html.erb (1.8ms)
+  Rendered vehicles/new.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 52ms (Views: 47.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2023-12-05 00:03:04 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ParkingSpotsController#index as HTML
+  Rendering parking_spots/index.html.erb within layouts/application
+  Rendered parking_spots/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 62ms (Views: 56.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vehicles.html" for 10.0.2.2 at 2023-12-05 00:03:06 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by VehiclesController#index as HTML
+  Rendering vehicles/index.html.erb within layouts/application
+  [1m[36mVehicle Load (0.3ms)[0m  [1m[34mSELECT "vehicles".* FROM "vehicles"[0m
+  ↳ app/views/vehicles/index.html.erb:17
+  Rendered vehicles/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 64ms (Views: 40.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/vehicles.html" for 10.0.2.2 at 2023-12-05 00:03:06 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by VehiclesController#index as HTML
+  Rendering vehicles/index.html.erb within layouts/application
+  [1m[36mVehicle Load (1.0ms)[0m  [1m[34mSELECT "vehicles".* FROM "vehicles"[0m
+  ↳ app/views/vehicles/index.html.erb:17
+  Rendered vehicles/index.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 37ms (Views: 32.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2023-12-05 00:04:17 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ParkingSpotsController#index as HTML
+  Rendering parking_spots/index.html.erb within layouts/application
+  Rendered parking_spots/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 51ms (Views: 47.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vehicles.html" for 10.0.2.2 at 2023-12-05 00:04:18 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by VehiclesController#index as HTML
+  Rendering vehicles/index.html.erb within layouts/application
+  [1m[36mVehicle Load (0.3ms)[0m  [1m[34mSELECT "vehicles".* FROM "vehicles"[0m
+  ↳ app/views/vehicles/index.html.erb:17
+  Rendered vehicles/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 72ms (Views: 41.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/vehicles.html" for 10.0.2.2 at 2023-12-05 00:04:18 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by VehiclesController#index as HTML
+  Rendering vehicles/index.html.erb within layouts/application
+  [1m[36mVehicle Load (0.4ms)[0m  [1m[34mSELECT "vehicles".* FROM "vehicles"[0m
+  ↳ app/views/vehicles/index.html.erb:17
+  Rendered vehicles/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 36ms (Views: 32.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/vehicles/new.html" for 10.0.2.2 at 2023-12-05 00:04:26 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by VehiclesController#new as HTML
+  Rendering vehicles/new.html.erb within layouts/application
+  Rendered vehicles/_form.html.erb (6.5ms)
+  Rendered vehicles/new.html.erb within layouts/application (10.9ms)
+Completed 200 OK in 87ms (Views: 79.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vehicles/vehicles.html" for 10.0.2.2 at 2023-12-05 00:04:26 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by VehiclesController#show as HTML
+  Parameters: {"id"=>"vehicles"}
+  [1m[36mVehicle Load (0.8ms)[0m  [1m[34mSELECT  "vehicles".* FROM "vehicles" WHERE "vehicles"."id" = ? LIMIT ?[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/vehicles_controller.rb:57
+Completed 404 Not Found in 4ms (ActiveRecord: 0.8ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Vehicle with 'id'=vehicles):
+  
+app/controllers/vehicles_controller.rb:57:in `set_vehicle'
+Started GET "/" for 10.0.2.2 at 2023-12-05 00:04:27 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ParkingSpotsController#index as HTML
+  Rendering parking_spots/index.html.erb within layouts/application
+  Rendered parking_spots/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 58ms (Views: 52.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vehicles/new.html" for 10.0.2.2 at 2023-12-05 00:04:30 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by VehiclesController#new as HTML
+  Rendering vehicles/new.html.erb within layouts/application
+  Rendered vehicles/_form.html.erb (1.9ms)
+  Rendered vehicles/new.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 47ms (Views: 41.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vehicles/new.html" for 10.0.2.2 at 2023-12-05 00:04:30 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by VehiclesController#new as HTML
+  Rendering vehicles/new.html.erb within layouts/application
+  Rendered vehicles/_form.html.erb (1.8ms)
+  Rendered vehicles/new.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 52ms (Views: 47.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/vehicles" for 10.0.2.2 at 2023-12-05 00:04:42 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by VehiclesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"YKZQw5tnnTFIfgmAx01Z1JyW3GjYQDWAQrYqDQQ0moEANPuLN1J5074XwtY9338vtVfJLFrx0mJ+/v3gdHy3xA==", "vehicle"=>{"plate"=>"POE", "color"=>"BRANCO", "model"=>"NOVO", "year"=>"2015", "responsavel_name"=>"CATRINI"}, "commit"=>"Salvar"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/vehicles_controller.rb:20
+  [1m[36mVehicle Create (1.9ms)[0m  [1m[32mINSERT INTO "vehicles" ("plate", "color", "model", "year", "created_at", "updated_at", "responsavel_name") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["plate", "POE"], ["color", "BRANCO"], ["model", "NOVO"], ["year", 2015], ["created_at", "2023-12-05 00:04:42.044360"], ["updated_at", "2023-12-05 00:04:42.044360"], ["responsavel_name", "CATRINI"]]
+  ↳ app/controllers/vehicles_controller.rb:20
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/vehicles_controller.rb:20
+Redirected to http://localhost:3000/vehicles/10
+Completed 302 Found in 12ms (ActiveRecord: 3.5ms)
+
+
+Started GET "/vehicles/10" for 10.0.2.2 at 2023-12-05 00:04:42 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by VehiclesController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mVehicle Load (0.4ms)[0m  [1m[34mSELECT  "vehicles".* FROM "vehicles" WHERE "vehicles"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/vehicles_controller.rb:57
+  Rendering vehicles/show.html.erb within layouts/application
+  Rendered vehicles/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 44ms (Views: 39.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/vehicles" for 10.0.2.2 at 2023-12-05 00:04:43 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by VehiclesController#index as HTML
+  Rendering vehicles/index.html.erb within layouts/application
+  [1m[36mVehicle Load (0.4ms)[0m  [1m[34mSELECT "vehicles".* FROM "vehicles"[0m
+  ↳ app/views/vehicles/index.html.erb:17
+  Rendered vehicles/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 45ms (Views: 39.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/vehicles" for 10.0.2.2 at 2023-12-05 00:05:48 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by VehiclesController#index as HTML
+  Rendering vehicles/index.html.erb within layouts/application
+  [1m[36mVehicle Load (0.5ms)[0m  [1m[34mSELECT "vehicles".* FROM "vehicles"[0m
+  ↳ app/views/vehicles/index.html.erb:17
+  Rendered vehicles/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 69ms (Views: 40.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 10.0.2.2 at 2023-12-05 00:06:40 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ParkingSpotsController#index as HTML
+  Rendering parking_spots/index.html.erb within layouts/application
+  Rendered parking_spots/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 47ms (Views: 42.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/vehicles.html" for 10.0.2.2 at 2023-12-05 00:06:41 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by VehiclesController#index as HTML
+  Rendering vehicles/index.html.erb within layouts/application
+  [1m[36mVehicle Load (0.4ms)[0m  [1m[34mSELECT "vehicles".* FROM "vehicles"[0m
+  ↳ app/views/vehicles/index.html.erb:20
+  Rendered vehicles/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 70ms (Views: 40.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/vehicles.html" for 10.0.2.2 at 2023-12-05 00:06:42 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by VehiclesController#index as HTML
+  Rendering vehicles/index.html.erb within layouts/application
+  [1m[36mVehicle Load (0.3ms)[0m  [1m[34mSELECT "vehicles".* FROM "vehicles"[0m
+  ↳ app/views/vehicles/index.html.erb:20
+  Rendered vehicles/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 38ms (Views: 34.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/vehicles/10" for 10.0.2.2 at 2023-12-05 00:07:29 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by VehiclesController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mVehicle Load (2.5ms)[0m  [1m[34mSELECT  "vehicles".* FROM "vehicles" WHERE "vehicles"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/vehicles_controller.rb:57
+  Rendering vehicles/show.html.erb within layouts/application
+  Rendered vehicles/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 47ms (Views: 35.9ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/vehicles" for 10.0.2.2 at 2023-12-05 00:07:31 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by VehiclesController#index as HTML
+  Rendering vehicles/index.html.erb within layouts/application
+  [1m[36mVehicle Load (0.3ms)[0m  [1m[34mSELECT "vehicles".* FROM "vehicles"[0m
+  ↳ app/views/vehicles/index.html.erb:20
+  Rendered vehicles/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 43ms (Views: 37.0ms | ActiveRecord: 0.3ms)
+
+
